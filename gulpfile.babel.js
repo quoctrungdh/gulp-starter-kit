@@ -35,6 +35,7 @@ const routes = {
 	styles: {
 		scss: `${baseDirs.src}styles/*.scss`,
 		_scss: `${baseDirs.src}styles/_includes/*.scss`,
+		_layouts: `${baseDirs.src}styles/_layouts/*.scss`,
 		css: `${baseDirs.dist}assets/css/`
 	},
 
@@ -213,7 +214,7 @@ gulp.task('serve', () => {
 		server: './dist/'
 	});
 
-	gulp.watch([routes.styles.scss, routes.styles._scss], ['styles']);
+	gulp.watch([routes.styles.scss, routes.styles._layouts , routes.styles._scss], ['styles']);
 	gulp.watch([routes.templates.pug, routes.templates._pug], ['templates']);
 	gulp.watch(routes.scripts.js, ['scripts', 'beautify']);
 });

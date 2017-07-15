@@ -1,0 +1,18 @@
+header {
+    padding: 5em 1.5em;
+    color: $white;
+}
+
+header {
+    background: linear-gradient(to left, $secondary-bg-color, $primary-bg-color);
+}
+
+header,
+footer {
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 3.5em;
+}

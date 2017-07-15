@@ -1,32 +1,4 @@
+@import '_includes/_reset';
 @import '_includes/_vars';
 @import '_includes/_mixins';
-
-html,
-body {
-    padding: 0;
-    margin: 0;
-    font-size: 18px;
-    font-family: 'Open Sans', Helvetica;
-}
-
-header {
-    padding: 5em 1.5em;
-    color: $white;
-}
-
-header {
-    background: $primary-bg-color;
-    background: $secondary-bg-color;
-    background: -webkit-linear-gradient(to left, $secondary-bg-color, $primary-bg-color);
-    background: linear-gradient(to left, $secondary-bg-color, $primary-bg-color);
-}
-
-header,
-footer {
-    text-align: center;
-}
-
-header h1 {
-    font-weight: 700;
-    font-size: 3.5em;
-}
+@import '_layouts/_layouts';
